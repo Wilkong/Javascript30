@@ -87,8 +87,8 @@
       const minutesDegrees = ((now.getMinutes() / 60) * 360) + 90;
       minHand.style.transform = `rotate(${minutesDegrees}deg)`;      
 
-      let hours = now.getHours();
-      
+      let hours = now.getHours();      
+
       if( hours > 12) {
         hours -= 12;
       } 
@@ -97,7 +97,7 @@
       hourHand.style.transform = `rotate(${hoursDegrees}deg)`;      
     }
 
-    setInterval(setDate,1000);
+    setInterval(setDate,1000);  
   </script>
 </body>
 </html>
